@@ -1,0 +1,18 @@
+[features]
+seeds = false
+[programs.localnet]
+dao_collab = "AoRDffT73CQxWj9wayTTsu94qnZLSJsXkLsLLXpdyq3i"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[[test.genesis]]
+address = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
+program = "mpl_token_metadata.so"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/pratiksaria/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
